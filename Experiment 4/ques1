@@ -1,0 +1,25 @@
+/* Declare a global variable outside all functions and use it inside various functions to 
+understand its accessibility. */
+
+#include <stdio.h>
+
+int main() {
+    
+   int a = 10,b = 20;
+
+   int add(int n1,int n2)
+   {
+    return n1+n2;
+   }
+   int diff(int n1,int n2)
+   {
+    return n2-n1;
+   }
+
+   int sum = add(a,b);
+   int min = diff(a,b);
+   printf("sum = %d\n",sum);
+   printf("difference = %d",min);
+
+   return 0;
+}
