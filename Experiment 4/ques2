@@ -1,0 +1,20 @@
+/*Declare a local variable inside a function and try to access it outside the function. 
+Compare this with accessing the global variable from within the function. */
+#include <stdio.h>
+
+int main() {
+    
+    int gv = 10;
+
+    void print()
+    {
+        int lv = 20;
+        printf("local variable inside = %d\n",lv);
+    }
+
+     print();
+     //printf("local variable outside = %d\n",lv);
+     printf("global variable outside = %d\n",gv);
+    
+    return 0;
+}
