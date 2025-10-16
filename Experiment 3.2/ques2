@@ -1,0 +1,20 @@
+// WAP to print the multiplication table of the number entered by the user. It should be in the correct formatting. Num * 1 = Num
+
+#include <stdio.h>
+
+int main() {
+    
+    int num,i,n;
+    printf("Enter a number whose table you want print: ");
+    scanf("%d",&num);
+    printf("Enter till where you want the table to print : ");
+    scanf("%d",&n);
+
+    // Print multiplication table
+    for(i = 1; i <= n; i++) {
+        printf("%d * %d = %d\n", num, i, num * i);
+    }
+
+    return 0;
+}
+
