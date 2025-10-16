@@ -1,0 +1,28 @@
+/* WAP to generate the following set of output.
+a.
+  1
+ 2 3
+4 5 6 */
+
+#include <stdio.h>
+
+int main() {
+    int i, j, k = 1, n = 3;  // n = number of rows
+
+    for (i = 1; i <= n; i++) {
+        // Print spaces
+        for (j = i; j < n; j++) {
+            printf("  ");
+        }
+
+        // Print numbers
+        for (j = 1; j <= i; j++) {
+            printf("%d ", k);
+            k++;
+        }
+
+        printf("\n");
+    }
+
+    return 0;
+}
