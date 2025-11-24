@@ -1,0 +1,18 @@
+/*Write a function that accepts pointers as parameters. Pass variables by 
+reference using pointers and modify their values within the function.*/
+
+#include <stdio.h>
+
+void change(int *a) {
+    *a = *a + 10;  // add 10 to the value
+}
+
+int main() {
+    int x = 5;
+    printf("Before: %d\n", x);
+
+    change(&x);  // pass address of x
+
+    printf("After: %d\n", x);
+    return 0;
+}
