@@ -1,0 +1,19 @@
+// Write a program to apply left shift and right shift operator.
+
+#include <stdio.h>
+int main()
+{
+    int num;
+    int ls,rs;
+
+    printf("Enter a number:\n");
+    scanf("%d",&num);
+
+    ls = num << 1 ;
+    rs = num >> 1 ;
+
+    printf("left shift: %d\n",ls);
+    printf("right shift: %d",rs);
+    
+    return 0;
+}
